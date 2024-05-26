@@ -1,6 +1,6 @@
 = brightr
 
-Sm_oooo_thly adjust screen brightness on Linux with ease.
+Sm__oooo__thly adjust screen brightness on Linux with ease.
 
 == Requirements
 
