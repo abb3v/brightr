@@ -1,0 +1,67 @@
+= brightr
+:toc:
+
+Sm*ooooo*thly adjust screen brightness on Linux with ease.
+
+== Requirements
+
+- `brightnessctl`
+- `bash`
+
+== Installation
+
+1. Save the `brightr` script to your desired location, e.g., `~/path/to/brightr.sh`.
+2. Make the script executable:
+
+    ```sh
+    chmod +x ~/path/to/brightr.sh
+    ```
+
+== Usage
+
+```sh
+brightr {up|down} <percentage> [duration] [notify]
+```
+
+- `up|down`:
+  * Mandatory: Direction to change brightness.
+- `percentage`:
+  * Mandatory: Integer percentage to increase or decrease brightness.
+- `duration`:
+  * Optional: Decimal duration between steps (default is 0.02 seconds).
+- `notify`:
+  * Optional: Send notification with final brightness level.
+
+== Examples
+
+Increase brightness by 10% with default duration:
+
+```sh
+./brightr.sh up 10
+```
+
+Decrease brightness by 20% with a duration of 0.05 seconds:
+
+```sh
+./brightr.sh down 20 0.05
+```
+
+Increase brightness by 5% and send a notification:
+
+```sh
+./brightr.sh up 5 0.02 notify
+```
+
+== WM Integration
+
+As an example, you can integrate brightr to Sway!
+```sh
+bindsym XF86MonBrightnessUp exec ~/path/to/brightr.sh up 10 0.02 notify
+bindsym XF86MonBrightnessDown exec ~/path/to/brightr.sh down 10 0.02 notify
+```
+
+== License
+
+
+this project is licensed under the gnu lesser general public license v3.0
+
