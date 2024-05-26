@@ -1,5 +1,4 @@
 = brightr
-:toc:
 
 Sm*ooooo*thly adjust screen brightness on Linux with ease.
 
