@@ -1,6 +1,6 @@
 = brightr
 
-Sm*ooooo*thly adjust screen brightness on Linux with ease.
+Sm_oooo_thly adjust screen brightness on Linux with ease.
 
 == Requirements
 
@@ -12,9 +12,7 @@ Sm*ooooo*thly adjust screen brightness on Linux with ease.
 1. Save the `brightr` script to your desired location, e.g., `~/path/to/brightr.sh`.
 2. Make the script executable:
 
-    ```sh
     chmod +x ~/path/to/brightr.sh
-    ```
 
 == Usage
 
@@ -60,7 +58,4 @@ bindsym XF86MonBrightnessDown exec ~/path/to/brightr.sh down 10 0.02 notify
 ```
 
 == License
-
-
-this project is licensed under the gnu lesser general public license v3.0
 
